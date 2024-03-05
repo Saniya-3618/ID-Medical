@@ -1,0 +1,31 @@
+-----------------------------------------------------------------------------------------------------------------
+NHSP Requirements Cancellation
+-----------------------------------------------------------------------------------------------------------------
+
+Requirements:-
+	IDMedical require the such a requirements that are fulfilled and removed from the portal. That requirement's are need to mark as a cancelled requirement.
+
+PreRequisites:-
+	We require the results (unfilled requirements) from the 3 days and 28 days scrapping functionality
+
+Solution:-
+	1) Once the results from the 3 days and 28 days scrapping are available and the requirements cancellation scheduler
+	   is triggered, we will compare two conjugative execution results/ output excel. (We will compare 3 days results with
+	   3 days and 28 results with 28 days only)
+	2) After comparison, find out the difference of requirement which are present previously but now its not available in the unfilled
+	   requirements excel.
+	3) If we find any difference in the requirements then these requirement will be further compare with the filled requirements.
+	4) Then will scrape the filled requirements (by agency and by bank) from the NHSP portal (3 days and 28 days filled requirements seperatly).
+	5) Then from the difference of the unfilled requirements remove the requirements which are filled by agency, so that we
+	   will get the requirements which are filled by the bank and the requirements which are completly missing from the portal.
+	6) And will save these requirements in the cancelled requirements excel.
+	7) Generated cancellation requirements files will be checked in job cancellation scheduler (Java) and the requirements
+	   will be updated to clarity through cancellation API.
+	8)
+
+
+#######################################################
+
+bumped requirements --- send to Agency/ filled by agency --->>> filled by bank
+
+#######################################################

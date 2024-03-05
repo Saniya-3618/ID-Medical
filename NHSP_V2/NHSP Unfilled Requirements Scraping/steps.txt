@@ -1,0 +1,15 @@
+1. install python == 3.8 and check pip is installed (if not install it)
+   pip list
+2. install virtual environment library
+   pip install virtualenv
+3. create virtal environment
+   virtualenv venv
+4. activate the created virtual environment
+   .\venv\Scripts\activate
+5. install requirments from the requirements.txt
+   pip install -r requirements.txt
+6. update the file paths in the common files
+7. update the selection of the interpreter to the virtual environment python.exe (venv/Scripts/Python.exe)
+8. run the main.py file
+   py main.py
+9. 
