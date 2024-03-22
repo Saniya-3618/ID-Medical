@@ -1,0 +1,53 @@
+{
+    "Open Shifts": [
+        {
+            "Status": null,
+            "EmailId": "noreply-FHFT@allocate-cloud.com",
+            "Speciality": null,
+            "Start": "07:00",
+            "Priority": "No",
+            "EmailReceivedDate": "2024-03-06 14:20:44+05:30",
+            "Grade": "B2 MHA NHSI",
+            "Request Id": "0324202880",
+            "Gender": "",
+            "From": "Temporary Staffing at Frimley Health ",
+            "Agency Staff": "N/A",
+            "Date": "10-Mar-24",
+            "Cost Centre Desc": null,
+            "Subject": "Shifts for fulfilment",
+            "FallbackSpeciality": null,
+            "Ward": "151 1619 Ward F8",
+            "Cost Centre": null,
+            "End": "19:30",
+            "Secondary Grade Type": "MHA",
+            "Grade Type": "MHA"
+        }
+    ],
+    "Closed Shifts": [
+        {
+            "Status": null,
+            "Secondary Grade": null,
+            "EmailId": "noreply-FHFT@allocate-cloud.com",
+            "Speciality": null,
+            "Start": "07:00",
+            "Priority": null,
+            "Trust Code": "Closed Escalations",
+            "EmailReceivedDate": "2024-03-06 14:20:44+05:30",
+            "Grade": "B2 MHA NHSI",
+            "Request Id": "0324202880",
+            "Gender": null,
+            "From": "Temporary Staffing at Frimley Health ",
+            "Agency Staff": null,
+            "Date": "10-Mar-24",
+            "Cost Centre Desc": null,
+            "Subject": "Shift Cancellation",
+            "FallbackSpeciality": null,
+            "Ward": "151 1619 Ward F8",
+            "Skills": null,
+            "Cost Centre": null,
+            "End": "19:30",
+            "Secondary Grade Type": null,
+            "Grade Type": null
+        }
+    ]
+}

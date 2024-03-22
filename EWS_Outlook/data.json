@@ -1,0 +1,23 @@
+[
+    {
+        "Request Id": "0324718562",
+        "Date": "07-Mar-24",
+        "Trust Code": "Gloucestershire Health & Care NHS Foundation Trust",
+        "Ward": "327 E11802 Vale Hospital - Peak View Ward",
+        "Start": "07:15",
+        "End": "15:15",
+        "Grade": "Band 5 RN",
+        "Skills": "",
+        "Gender": "",
+        "Status": "Unfilled Agency",
+        "Agency Staff": "N/A",
+        "EmailId": "<noreply@allocate-cloud.com>",
+        "EmailReceivedDate": "2024-03-06 15:02:23+05:30",
+        "From": "Gloucestershire Health and Care NHS Foundation Trust",
+        "Subject": "Unfilled Shifts Transferred To Your Agency",
+        "To": "<GHCBookings@id-medical.com>",
+        "Cost Centre Desc": "Wotton Lawn - Montpellier",
+        "Cost Centre": "327 D11612",
+        "Grade Type": "HCA"
+    }
+]
