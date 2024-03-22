@@ -143,18 +143,7 @@ class NHSPPortalScraping():
                 for column in Constants.EXCEL_COLUMN_HEADERS_LIST:
                     # new_row[column] = str(exported_excel_df.loc[index, column]).strip()
                     new_row[column] = str(filtered_df.loc[index, column]).strip()
-                    # value = str(exported_excel_df.loc[index, column]).strip()
-                    #  # Check if the column is 'Notes' and the value is 'nan'
-                    # if column == Constants.EXCEL_COLUMN_HEADERS_LIST[11] and value in ['', 'nan']:
-                    #     new_row[column] = ''
-                    #     # print('column1= ',column, '  ','value= ',value)
-                    # # Check if the column is 'Gender' and the value is 'nan'
-                    # elif column == Constants.EXCEL_COLUMN_HEADERS_LIST[12] and value in ['', 'nan']:
-                    #     new_row[column] = 'NA'
-                    #     # print('colum2= ',column, '  ','value= ',value)   
-                    # else:
-                    #     new_row[column] = value
-                        
+                                           
                 df = df.append(new_row, ignore_index=True)
                 print('df= ',df)
             logging.info(f'creating the filled shift requirements excel files')
