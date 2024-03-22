@@ -145,7 +145,7 @@ class NHSPPortalScraping():
                     new_row[column] = str(filtered_df.loc[index, column]).strip()
                                            
                 df = df.append(new_row, ignore_index=True)
-                print('df= ',df)
+                # print('df= ',df)
             logging.info(f'creating the filled shift requirements excel files')
             file_name = datetime.now().strftime(os.path.join(Constants.SHIFT_REQUIREMENTS_EXCEL_FILENAME))
             filled_requirements_file = os.path.join(Constants.PROJECT_PATH + Constants.FILLED_REQUIREMENTS_EXCELS_FOLDER, file_name)
