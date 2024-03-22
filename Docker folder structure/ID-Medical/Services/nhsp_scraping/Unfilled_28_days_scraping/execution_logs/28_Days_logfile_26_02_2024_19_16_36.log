@@ -1,0 +1,502 @@
+26-Feb-24 19:16:36 - [ThreadPoolExecutor-0_0] [INFO] - NHSP Portal Scraping Started
+26-Feb-24 19:16:36 - [ThreadPoolExecutor-0_0] [INFO] - api 1 status_code - 200
+26-Feb-24 19:16:36 - [ThreadPoolExecutor-0_0] [INFO] - driver_version - 122.0.6261.69
+26-Feb-24 19:16:37 - [ThreadPoolExecutor-0_0] [INFO] - api 2 status_code - 200
+26-Feb-24 19:16:37 - [ThreadPoolExecutor-0_0] [INFO] - driver_download_url - https://storage.googleapis.com/chrome-for-testing-public/122.0.6261.69/win64/chromedriver-win64.zip
+26-Feb-24 19:16:37 - [ThreadPoolExecutor-0_0] [INFO] - Downloading Started
+26-Feb-24 19:16:40 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured while downloading the chrome driver: {"errorType": "FileNotFoundError", "errorMessage": "[Errno 2] No such file or directory: '/tmp/chromedriver-win64.zip'", "stackTrace": ["Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 632, in download_chrome_driver\n    with open(file_path, 'wb') as output_file:\n", "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/chromedriver-win64.zip'\n"]}
+26-Feb-24 19:16:40 - [ThreadPoolExecutor-0_0] [INFO] - Scraping requirements for the location index - 0
+26-Feb-24 19:22:12 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured while scraping location: {"errorType": "TimeoutException", "errorMessage": "Message: Navigation timed out after 300000 ms\nStacktrace:\nRemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8\nWebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:191:5\nTimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:723:5\nbail@chrome://remote/content/marionette/sync.sys.mjs:211:19\n", "stackTrace": ["Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 168, in scraping_requirements_for_location\n    driver.get(Constants.PORTAL_LINK)\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 355, in get\n    self.execute(Command.GET, {\"url\": url})\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 346, in execute\n    self.error_handler.check_response(response)\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 245, in check_response\n    raise exception_class(message, screen, stacktrace)\n", "selenium.common.exceptions.TimeoutException: Message: Navigation timed out after 300000 ms\nStacktrace:\nRemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8\nWebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:191:5\nTimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:723:5\nbail@chrome://remote/content/marionette/sync.sys.mjs:211:19\n\n"]}
+26-Feb-24 19:22:15 - [ThreadPoolExecutor-0_0] [INFO] - closed the browser window
+26-Feb-24 19:22:15 - [ThreadPoolExecutor-0_0] [INFO] - Time required for the execution is 335.3105776309967
+26-Feb-24 19:22:15 - [ThreadPoolExecutor-0_0] [INFO] - Scraping requirements for the location index - 0
+26-Feb-24 19:22:26 - [ThreadPoolExecutor-0_0] [INFO] - login page opened
+26-Feb-24 19:22:30 - [ThreadPoolExecutor-0_0] [INFO] - clicked Login
+26-Feb-24 19:22:50 - [ThreadPoolExecutor-0_0] [INFO] - checking for the navigation panel
+26-Feb-24 19:22:50 - [ThreadPoolExecutor-0_0] [INFO] - navigation panel found and checking for the 28 days tab
+26-Feb-24 19:22:51 - [ThreadPoolExecutor-0_0] [INFO] - clicked on the 28 days tab
+26-Feb-24 19:23:01 - [ThreadPoolExecutor-0_0] [INFO] - opening the filter option panel
+26-Feb-24 19:23:06 - [ThreadPoolExecutor-0_0] [INFO] - selecting the filtering option - status (unfilled)
+26-Feb-24 19:23:11 - [ThreadPoolExecutor-0_0] [INFO] - selecting the filtering option - authorisation (all)
+26-Feb-24 19:23:17 - [ThreadPoolExecutor-0_0] [INFO] - closing the filter option panel
+26-Feb-24 19:23:20 - [ThreadPoolExecutor-0_0] [INFO] - location_menu_options_elements - 71
+26-Feb-24 19:23:20 - [ThreadPoolExecutor-0_0] [INFO] - location - 59 Walton Street
+26-Feb-24 19:23:21 - [ThreadPoolExecutor-0_0] [INFO] - total parsed locations - 0
+26-Feb-24 19:23:21 - [ThreadPoolExecutor-0_0] [INFO] - total parsed wards - 0
+26-Feb-24 19:23:21 - [ThreadPoolExecutor-0_0] [INFO] - total next wards for parsing - 1
+26-Feb-24 19:23:23 - [ThreadPoolExecutor-0_0] [INFO] - Selected the date range option is - Next 28 days
+26-Feb-24 19:23:24 - [ThreadPoolExecutor-0_0] [INFO] - Total iterations require for the parsing are - 1
+26-Feb-24 19:23:26 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:23:29 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:23:29 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:23:29 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:23:41 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:23:47 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:23:47 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:23:52 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:23:52 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:23:52 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:23:52 - [ThreadPoolExecutor-0_0] [INFO] - Exported excel data is not correct, retry the ward selction
+26-Feb-24 19:23:52 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:23:57 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:24:03 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:24:03 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:24:03 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:24:16 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:24:22 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:24:22 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:24:22 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:24:22 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:24:22 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:24:22 - [ThreadPoolExecutor-0_0] [INFO] - Exported excel data is not correct, retry the ward selction
+26-Feb-24 19:24:22 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:24:27 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:24:29 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:24:29 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:24:29 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:24:42 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:24:48 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:24:48 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:24:48 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:24:48 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:24:48 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:24:48 - [ThreadPoolExecutor-0_0] [INFO] - something went wrong, raising the exception to retry the ward selction
+26-Feb-24 19:24:48 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured while scraping ward: {"errorType": "Exception", "errorMessage": "", "stackTrace": ["Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 412, in scraping_requirements_for_location\n    raise Exception\n", "Exception\n"]}
+26-Feb-24 19:24:48 - [ThreadPoolExecutor-0_0] [INFO] - Retrying with the wards selection
+26-Feb-24 19:24:48 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:24:53 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:24:56 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:24:56 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:24:56 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:25:09 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:25:15 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:25:15 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:25:15 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:25:15 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:25:15 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:25:15 - [ThreadPoolExecutor-0_0] [INFO] - something went wrong, raising the exception to retry the ward selction
+26-Feb-24 19:25:15 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured while scraping ward: {"errorType": "Exception", "errorMessage": "", "stackTrace": ["Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 412, in scraping_requirements_for_location\n    raise Exception\n", "Exception\n"]}
+26-Feb-24 19:25:15 - [ThreadPoolExecutor-0_0] [INFO] - Retrying with the wards selection
+26-Feb-24 19:25:15 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:25:20 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:25:22 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:25:22 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:25:22 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:25:35 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:25:41 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:25:41 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:25:41 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:25:41 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:25:41 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:25:41 - [ThreadPoolExecutor-0_0] [INFO] - something went wrong, raising the exception to retry the ward selction
+26-Feb-24 19:25:41 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured while scraping ward: {"errorType": "Exception", "errorMessage": "", "stackTrace": ["Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 412, in scraping_requirements_for_location\n    raise Exception\n", "Exception\n"]}
+26-Feb-24 19:25:41 - [ThreadPoolExecutor-0_0] [INFO] - Retrying with the wards selection
+26-Feb-24 19:25:41 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:25:46 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:25:48 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:25:48 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:25:48 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:26:01 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:26:07 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:26:07 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:26:07 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:26:07 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:26:07 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:26:07 - [ThreadPoolExecutor-0_0] [INFO] - something went wrong, raising the exception to retry the ward selction
+26-Feb-24 19:26:07 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured while scraping ward: {"errorType": "Exception", "errorMessage": "", "stackTrace": ["Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 412, in scraping_requirements_for_location\n    raise Exception\n", "Exception\n"]}
+26-Feb-24 19:26:07 - [ThreadPoolExecutor-0_0] [INFO] - Retrying with the wards selection
+26-Feb-24 19:26:07 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:26:12 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:26:14 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:26:14 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:26:14 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:26:27 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:26:33 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:26:33 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:26:33 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:26:33 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:26:33 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:26:33 - [ThreadPoolExecutor-0_0] [INFO] - Exported excel data is not correct, retry the ward selction
+26-Feb-24 19:26:33 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:26:38 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:26:40 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:26:40 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:26:40 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:26:53 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:26:59 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:26:59 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:26:59 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:26:59 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:26:59 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:26:59 - [ThreadPoolExecutor-0_0] [INFO] - something went wrong, raising the exception to retry the ward selction
+26-Feb-24 19:26:59 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured while scraping ward: {"errorType": "Exception", "errorMessage": "", "stackTrace": ["Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 412, in scraping_requirements_for_location\n    raise Exception\n", "Exception\n"]}
+26-Feb-24 19:26:59 - [ThreadPoolExecutor-0_0] [INFO] - Retrying with the wards selection
+26-Feb-24 19:26:59 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:27:04 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:27:06 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:27:06 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:27:06 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:27:19 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:27:25 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:27:25 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:27:25 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:27:25 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:27:25 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:27:25 - [ThreadPoolExecutor-0_0] [INFO] - something went wrong, raising the exception to retry the ward selction
+26-Feb-24 19:27:25 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured while scraping ward: {"errorType": "Exception", "errorMessage": "", "stackTrace": ["Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 412, in scraping_requirements_for_location\n    raise Exception\n", "Exception\n"]}
+26-Feb-24 19:27:25 - [ThreadPoolExecutor-0_0] [INFO] - Retrying with the wards selection
+26-Feb-24 19:27:25 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:27:30 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:27:32 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:27:32 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:27:32 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:27:45 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:27:51 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:27:51 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:27:51 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:27:51 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:27:51 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:27:51 - [ThreadPoolExecutor-0_0] [INFO] - something went wrong, raising the exception to retry the ward selction
+26-Feb-24 19:27:51 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured while scraping ward: {"errorType": "Exception", "errorMessage": "", "stackTrace": ["Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 412, in scraping_requirements_for_location\n    raise Exception\n", "Exception\n"]}
+26-Feb-24 19:27:51 - [ThreadPoolExecutor-0_0] [INFO] - Retrying with the wards selection
+26-Feb-24 19:27:51 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:27:56 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:27:58 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:27:58 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:27:58 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:28:11 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:28:17 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:28:17 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:28:17 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:28:17 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:28:17 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:28:17 - [ThreadPoolExecutor-0_0] [INFO] - something went wrong, raising the exception to retry the ward selction
+26-Feb-24 19:28:17 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured while scraping ward: {"errorType": "Exception", "errorMessage": "", "stackTrace": ["Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 412, in scraping_requirements_for_location\n    raise Exception\n", "Exception\n"]}
+26-Feb-24 19:28:17 - [ThreadPoolExecutor-0_0] [INFO] - Retrying with the wards selection
+26-Feb-24 19:28:17 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:28:22 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:28:24 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:28:24 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:28:24 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:28:37 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:28:43 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:28:43 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:28:43 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:28:43 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:28:43 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:28:43 - [ThreadPoolExecutor-0_0] [INFO] - Exported excel data is not correct, retry the ward selction
+26-Feb-24 19:28:43 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:28:48 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:28:50 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:28:50 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:28:50 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:29:03 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:29:09 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:29:09 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:29:09 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:29:09 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:29:09 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:29:09 - [ThreadPoolExecutor-0_0] [INFO] - something went wrong, raising the exception to retry the ward selction
+26-Feb-24 19:29:09 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured while scraping ward: {"errorType": "Exception", "errorMessage": "", "stackTrace": ["Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 412, in scraping_requirements_for_location\n    raise Exception\n", "Exception\n"]}
+26-Feb-24 19:29:09 - [ThreadPoolExecutor-0_0] [INFO] - Retrying with the wards selection
+26-Feb-24 19:29:09 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:29:14 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:29:16 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:29:16 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:29:16 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:29:29 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:29:35 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:29:35 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:29:35 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:29:35 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:29:35 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:29:35 - [ThreadPoolExecutor-0_0] [INFO] - something went wrong, raising the exception to retry the ward selction
+26-Feb-24 19:29:35 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured while scraping ward: {"errorType": "Exception", "errorMessage": "", "stackTrace": ["Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 412, in scraping_requirements_for_location\n    raise Exception\n", "Exception\n"]}
+26-Feb-24 19:29:35 - [ThreadPoolExecutor-0_0] [INFO] - Retrying with the wards selection
+26-Feb-24 19:29:35 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:29:40 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:29:42 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:29:42 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:29:42 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:29:55 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:30:01 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:30:01 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:30:01 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:30:01 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:30:01 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:30:01 - [ThreadPoolExecutor-0_0] [INFO] - Exported excel data is not correct, retry the ward selction
+26-Feb-24 19:30:01 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:30:06 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:30:08 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:30:08 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:30:08 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:30:21 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:30:27 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:30:27 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:30:27 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:30:27 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:30:27 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:30:27 - [ThreadPoolExecutor-0_0] [INFO] - Exported excel data is not correct, retry the ward selction
+26-Feb-24 19:30:27 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:30:32 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:30:34 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:30:34 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:30:34 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:30:47 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:30:53 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:30:53 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:30:53 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:30:53 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:30:53 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:30:53 - [ThreadPoolExecutor-0_0] [INFO] - something went wrong, raising the exception to retry the ward selction
+26-Feb-24 19:30:53 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured while scraping ward: {"errorType": "Exception", "errorMessage": "", "stackTrace": ["Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 412, in scraping_requirements_for_location\n    raise Exception\n", "Exception\n"]}
+26-Feb-24 19:30:53 - [ThreadPoolExecutor-0_0] [INFO] - Retrying with the wards selection
+26-Feb-24 19:30:53 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:30:58 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:31:00 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:31:00 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:31:00 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:31:13 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:31:25 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:31:25 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:31:25 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:31:25 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:31:25 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:31:25 - [ThreadPoolExecutor-0_0] [INFO] - Exported excel data is not correct, retry the ward selction
+26-Feb-24 19:31:25 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:31:30 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:31:32 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:31:32 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:31:32 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:31:45 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:31:51 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:31:51 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:31:51 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:31:51 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:31:51 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:31:51 - [ThreadPoolExecutor-0_0] [INFO] - something went wrong, raising the exception to retry the ward selction
+26-Feb-24 19:31:51 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured while scraping ward: {"errorType": "Exception", "errorMessage": "", "stackTrace": ["Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 412, in scraping_requirements_for_location\n    raise Exception\n", "Exception\n"]}
+26-Feb-24 19:31:51 - [ThreadPoolExecutor-0_0] [INFO] - Retrying with the wards selection
+26-Feb-24 19:31:51 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:31:56 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:31:59 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:31:59 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:31:59 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:32:11 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:32:17 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:32:17 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:32:18 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:32:18 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:32:18 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:32:18 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured while scraping ward: {"errorType": "IndexError", "errorMessage": "list index out of range", "stackTrace": ["Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 408, in scraping_requirements_for_location\n    exported_excel_df = pd.read_excel(exported_excel_file[0], sheet_name=Constants.EXCEL_SHEET_NAME)\n", "IndexError: list index out of range\n"]}
+26-Feb-24 19:32:18 - [ThreadPoolExecutor-0_0] [INFO] - Retrying with the wards selection
+26-Feb-24 19:32:18 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:32:22 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:32:25 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:32:25 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:32:25 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:32:38 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:32:44 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:32:44 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:32:44 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:32:44 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:32:44 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:32:44 - [ThreadPoolExecutor-0_0] [INFO] - Exported excel data is not correct, retry the ward selction
+26-Feb-24 19:32:44 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:32:49 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:32:51 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:32:51 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:32:51 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:33:04 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:33:10 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:33:10 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:33:10 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:33:10 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:33:10 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:33:10 - [ThreadPoolExecutor-0_0] [INFO] - something went wrong, raising the exception to retry the ward selction
+26-Feb-24 19:33:10 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured while scraping ward: {"errorType": "Exception", "errorMessage": "", "stackTrace": ["Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 412, in scraping_requirements_for_location\n    raise Exception\n", "Exception\n"]}
+26-Feb-24 19:33:10 - [ThreadPoolExecutor-0_0] [INFO] - Retrying with the wards selection
+26-Feb-24 19:33:10 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:33:15 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:33:18 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:33:18 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:33:18 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:33:31 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:33:37 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:33:37 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:33:37 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:33:37 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:33:37 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:33:37 - [ThreadPoolExecutor-0_0] [INFO] - something went wrong, raising the exception to retry the ward selction
+26-Feb-24 19:33:37 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured while scraping ward: {"errorType": "Exception", "errorMessage": "", "stackTrace": ["Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 412, in scraping_requirements_for_location\n    raise Exception\n", "Exception\n"]}
+26-Feb-24 19:33:37 - [ThreadPoolExecutor-0_0] [INFO] - Retrying with the wards selection
+26-Feb-24 19:33:37 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:33:42 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:33:44 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:33:44 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:33:44 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:33:57 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:34:03 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:34:03 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:34:03 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:34:03 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:34:03 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:34:03 - [ThreadPoolExecutor-0_0] [INFO] - Exported excel data is not correct, retry the ward selction
+26-Feb-24 19:34:03 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:34:08 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:34:10 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:34:10 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:34:10 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:34:23 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:34:29 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:34:29 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:34:30 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:34:30 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:34:30 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:34:30 - [ThreadPoolExecutor-0_0] [INFO] - something went wrong, raising the exception to retry the ward selction
+26-Feb-24 19:34:30 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured while scraping ward: {"errorType": "Exception", "errorMessage": "", "stackTrace": ["Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 412, in scraping_requirements_for_location\n    raise Exception\n", "Exception\n"]}
+26-Feb-24 19:34:30 - [ThreadPoolExecutor-0_0] [INFO] - Retrying with the wards selection
+26-Feb-24 19:34:30 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:34:34 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:34:37 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:34:37 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:34:37 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:34:49 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:34:55 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:34:55 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:34:56 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:34:56 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:34:56 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:34:56 - [ThreadPoolExecutor-0_0] [INFO] - something went wrong, raising the exception to retry the ward selction
+26-Feb-24 19:34:56 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured while scraping ward: {"errorType": "Exception", "errorMessage": "", "stackTrace": ["Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 412, in scraping_requirements_for_location\n    raise Exception\n", "Exception\n"]}
+26-Feb-24 19:34:56 - [ThreadPoolExecutor-0_0] [INFO] - Retrying with the wards selection
+26-Feb-24 19:34:56 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:35:00 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:35:03 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:35:03 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:35:03 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:35:16 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:35:22 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:35:22 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:35:22 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:35:22 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:35:22 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:35:22 - [ThreadPoolExecutor-0_0] [INFO] - something went wrong, raising the exception to retry the ward selction
+26-Feb-24 19:35:22 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured while scraping ward: {"errorType": "Exception", "errorMessage": "", "stackTrace": ["Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 412, in scraping_requirements_for_location\n    raise Exception\n", "Exception\n"]}
+26-Feb-24 19:35:22 - [ThreadPoolExecutor-0_0] [INFO] - Retrying with the wards selection
+26-Feb-24 19:35:22 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:35:27 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:35:29 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:35:29 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:35:29 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:35:42 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:35:48 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:35:48 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:35:48 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:35:48 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:35:48 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:35:48 - [ThreadPoolExecutor-0_0] [INFO] - something went wrong, raising the exception to retry the ward selction
+26-Feb-24 19:35:48 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured while scraping ward: {"errorType": "Exception", "errorMessage": "", "stackTrace": ["Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 412, in scraping_requirements_for_location\n    raise Exception\n", "Exception\n"]}
+26-Feb-24 19:35:48 - [ThreadPoolExecutor-0_0] [INFO] - Retrying with the wards selection
+26-Feb-24 19:35:48 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:35:53 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:35:55 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:35:55 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:35:55 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:36:08 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:36:14 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:36:14 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:36:14 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:36:14 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:36:14 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:36:14 - [ThreadPoolExecutor-0_0] [INFO] - something went wrong, raising the exception to retry the ward selction
+26-Feb-24 19:36:14 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured while scraping ward: {"errorType": "Exception", "errorMessage": "", "stackTrace": ["Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 412, in scraping_requirements_for_location\n    raise Exception\n", "Exception\n"]}
+26-Feb-24 19:36:14 - [ThreadPoolExecutor-0_0] [INFO] - Retrying with the wards selection
+26-Feb-24 19:36:14 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:36:19 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:36:22 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:36:22 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:36:22 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:36:34 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:36:40 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:36:40 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:36:41 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:36:41 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:36:41 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:36:41 - [ThreadPoolExecutor-0_0] [INFO] - something went wrong, raising the exception to retry the ward selction
+26-Feb-24 19:36:41 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured while scraping ward: {"errorType": "Exception", "errorMessage": "", "stackTrace": ["Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 412, in scraping_requirements_for_location\n    raise Exception\n", "Exception\n"]}
+26-Feb-24 19:36:41 - [ThreadPoolExecutor-0_0] [INFO] - Retrying with the wards selection
+26-Feb-24 19:36:41 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:36:46 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:36:48 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:36:48 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:36:48 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:37:01 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:37:07 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:37:07 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:37:07 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:37:07 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:37:07 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:37:07 - [ThreadPoolExecutor-0_0] [INFO] - something went wrong, raising the exception to retry the ward selction
+26-Feb-24 19:37:07 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured while scraping ward: {"errorType": "Exception", "errorMessage": "", "stackTrace": ["Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 412, in scraping_requirements_for_location\n    raise Exception\n", "Exception\n"]}
+26-Feb-24 19:37:07 - [ThreadPoolExecutor-0_0] [INFO] - Retrying with the wards selection
+26-Feb-24 19:37:07 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:37:12 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:37:14 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:37:14 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:37:14 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:37:27 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:37:33 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:37:33 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:37:34 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:37:34 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:37:34 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:37:34 - [ThreadPoolExecutor-0_0] [INFO] - something went wrong, raising the exception to retry the ward selction
+26-Feb-24 19:37:34 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured while scraping ward: {"errorType": "Exception", "errorMessage": "", "stackTrace": ["Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 412, in scraping_requirements_for_location\n    raise Exception\n", "Exception\n"]}
+26-Feb-24 19:37:34 - [ThreadPoolExecutor-0_0] [INFO] - Retrying with the wards selection
+26-Feb-24 19:37:34 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:37:38 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:37:41 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:37:41 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:37:41 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:37:53 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:37:59 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:37:59 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:38:00 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:38:00 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:38:00 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:38:00 - [ThreadPoolExecutor-0_0] [INFO] - something went wrong, raising the exception to retry the ward selction
+26-Feb-24 19:38:00 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured while scraping ward: {"errorType": "Exception", "errorMessage": "", "stackTrace": ["Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 412, in scraping_requirements_for_location\n    raise Exception\n", "Exception\n"]}
+26-Feb-24 19:38:00 - [ThreadPoolExecutor-0_0] [INFO] - Retrying with the wards selection
+26-Feb-24 19:38:00 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:38:04 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:38:07 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:38:07 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:38:07 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:38:19 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:38:25 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:38:26 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:38:26 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:38:26 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:38:26 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:38:26 - [ThreadPoolExecutor-0_0] [INFO] - Exported excel data is not correct, retry the ward selction
+26-Feb-24 19:38:26 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:38:31 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:38:33 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:38:33 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:38:33 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:38:46 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:38:52 - [ThreadPoolExecutor-0_0] [INFO] - completed scrolling the page down (infinite scrolling)
+26-Feb-24 19:38:52 - [ThreadPoolExecutor-0_0] [INFO] - getting the all cards details div from the page
+26-Feb-24 19:38:52 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of the .xlsx files list from the downloads after exporting the excel
+26-Feb-24 19:38:52 - [ThreadPoolExecutor-0_0] [INFO] - copying the exported excel file from downloads to exported_excel folder
+26-Feb-24 19:38:52 - [ThreadPoolExecutor-0_0] [INFO] - opening the exported excel file in the pandas dataframe
+26-Feb-24 19:38:52 - [ThreadPoolExecutor-0_0] [INFO] - Exported excel data is not correct, retry the ward selction
+26-Feb-24 19:38:52 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page up to top
+26-Feb-24 19:38:57 - [ThreadPoolExecutor-0_0] [INFO] - 0 - Covid Bucks Mass Vaccination
+26-Feb-24 19:38:59 - [ThreadPoolExecutor-0_0] [INFO] - requirements are available
+26-Feb-24 19:38:59 - [ThreadPoolExecutor-0_0] [INFO] - getting the list of .xlsx files from downloads before exporting excel
+26-Feb-24 19:38:59 - [ThreadPoolExecutor-0_0] [INFO] - clicking on the export excel option
+26-Feb-24 19:39:12 - [ThreadPoolExecutor-0_0] [INFO] - scrolling the page down (infinite scrolling)
+26-Feb-24 19:40:07 - [ThreadPoolExecutor-0_0] [INFO] - Time required for the execution is 1411.0175566673279
+26-Feb-24 19:40:07 - [ThreadPoolExecutor-0_0] [ERROR] - Error Occured: {"errorType": "MaxRetryError", "errorMessage": "HTTPConnectionPool(host='localhost', port=49154): Max retries exceeded with url: /session/1435bc70-b611-416c-a2e9-859d417fd8f9/screenshot (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E7C8B639A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))", "stackTrace": ["Traceback (most recent call last):\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connection.py\", line 174, in _new_conn\n    conn = connection.create_connection(\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\util\\connection.py\", line 95, in create_connection\n    raise err\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\util\\connection.py\", line 85, in create_connection\n    sock.connect(sa)\n", "ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it\n", "\nDuring handling of the above exception, another exception occurred:\n\n", "Traceback (most recent call last):\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connectionpool.py\", line 703, in urlopen\n    httplib_response = self._make_request(\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connectionpool.py\", line 398, in _make_request\n    conn.request(method, url, **httplib_request_kw)\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connection.py\", line 244, in request\n    super(HTTPConnection, self).request(method, url, body=body, headers=headers)\n", "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\http\\client.py\", line 1283, in request\n    self._send_request(method, url, body, headers, encode_chunked)\n", "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\http\\client.py\", line 1329, in _send_request\n    self.endheaders(body, encode_chunked=encode_chunked)\n", "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\http\\client.py\", line 1278, in endheaders\n    self._send_output(message_body, encode_chunked=encode_chunked)\n", "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\http\\client.py\", line 1038, in _send_output\n    self.send(msg)\n", "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\http\\client.py\", line 976, in send\n    self.connect()\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connection.py\", line 205, in connect\n    conn = self._new_conn()\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connection.py\", line 186, in _new_conn\n    raise NewConnectionError(\n", "urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001E7C8B62650>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\n", "\nDuring handling of the above exception, another exception occurred:\n\n", "Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 377, in scraping_requirements_for_location\n    Tasks.infinite_scroll_down(driver)\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\common_28_days_scraping.py\", line 117, in infinite_scroll_down\n    new_height = driver.execute_script(\"return document.body.scrollHeight\")\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 406, in execute_script\n    return self.execute(command, {\"script\": script, \"args\": converted_args})[\"value\"]\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 344, in execute\n    response = self.command_executor.execute(driver_command, params)\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py\", line 290, in execute\n    return self._request(command_info[0], url, body=data)\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py\", line 311, in _request\n    response = self._conn.request(method, url, body=body, headers=headers)\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\request.py\", line 78, in request\n    return self.request_encode_body(\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\request.py\", line 170, in request_encode_body\n    return self.urlopen(method, url, **extra_kw)\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\poolmanager.py\", line 376, in urlopen\n    response = conn.urlopen(method, u.request_uri, **kw)\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connectionpool.py\", line 815, in urlopen\n    return self.urlopen(\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connectionpool.py\", line 815, in urlopen\n    return self.urlopen(\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connectionpool.py\", line 815, in urlopen\n    return self.urlopen(\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connectionpool.py\", line 787, in urlopen\n    retries = retries.increment(\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\util\\retry.py\", line 592, in increment\n    raise MaxRetryError(_pool, url, error or ResponseError(cause))\n", "urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=49154): Max retries exceeded with url: /session/1435bc70-b611-416c-a2e9-859d417fd8f9/execute/sync (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E7C8B62650>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))\n", "\nDuring handling of the above exception, another exception occurred:\n\n", "Traceback (most recent call last):\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connection.py\", line 174, in _new_conn\n    conn = connection.create_connection(\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\util\\connection.py\", line 95, in create_connection\n    raise err\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\util\\connection.py\", line 85, in create_connection\n    sock.connect(sa)\n", "ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it\n", "\nDuring handling of the above exception, another exception occurred:\n\n", "Traceback (most recent call last):\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connectionpool.py\", line 703, in urlopen\n    httplib_response = self._make_request(\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connectionpool.py\", line 398, in _make_request\n    conn.request(method, url, **httplib_request_kw)\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connection.py\", line 244, in request\n    super(HTTPConnection, self).request(method, url, body=body, headers=headers)\n", "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\http\\client.py\", line 1283, in request\n    self._send_request(method, url, body, headers, encode_chunked)\n", "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\http\\client.py\", line 1329, in _send_request\n    self.endheaders(body, encode_chunked=encode_chunked)\n", "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\http\\client.py\", line 1278, in endheaders\n    self._send_output(message_body, encode_chunked=encode_chunked)\n", "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\http\\client.py\", line 1038, in _send_output\n    self.send(msg)\n", "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\http\\client.py\", line 976, in send\n    self.connect()\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connection.py\", line 205, in connect\n    conn = self._new_conn()\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connection.py\", line 186, in _new_conn\n    raise NewConnectionError(\n", "urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001E7C8B63DF0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\n", "\nDuring handling of the above exception, another exception occurred:\n\n", "Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 521, in scraping_requirements_for_location\n    driver.get_screenshot_as_file(datetime.now().strftime(os.path.join( Constants.EXECUTION_SCREENSHOTS_FOLDER, '28_days_after_error_occured_%d_%m_%Y_%H_%M_%S.png')))  #on docker\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 802, in get_screenshot_as_file\n    png = self.get_screenshot_as_png()\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 836, in get_screenshot_as_png\n    return b64decode(self.get_screenshot_as_base64().encode(\"ascii\"))\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 847, in get_screenshot_as_base64\n    return self.execute(Command.SCREENSHOT)[\"value\"]\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 344, in execute\n    response = self.command_executor.execute(driver_command, params)\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py\", line 290, in execute\n    return self._request(command_info[0], url, body=data)\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py\", line 311, in _request\n    response = self._conn.request(method, url, body=body, headers=headers)\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\request.py\", line 74, in request\n    return self.request_encode_url(\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\request.py\", line 96, in request_encode_url\n    return self.urlopen(method, url, **extra_kw)\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\poolmanager.py\", line 376, in urlopen\n    response = conn.urlopen(method, u.request_uri, **kw)\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connectionpool.py\", line 815, in urlopen\n    return self.urlopen(\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connectionpool.py\", line 815, in urlopen\n    return self.urlopen(\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connectionpool.py\", line 815, in urlopen\n    return self.urlopen(\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connectionpool.py\", line 787, in urlopen\n    retries = retries.increment(\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\util\\retry.py\", line 592, in increment\n    raise MaxRetryError(_pool, url, error or ResponseError(cause))\n", "urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=49154): Max retries exceeded with url: /session/1435bc70-b611-416c-a2e9-859d417fd8f9/screenshot (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E7C8B63DF0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))\n", "\nDuring handling of the above exception, another exception occurred:\n\n", "Traceback (most recent call last):\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connection.py\", line 174, in _new_conn\n    conn = connection.create_connection(\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\util\\connection.py\", line 95, in create_connection\n    raise err\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\util\\connection.py\", line 85, in create_connection\n    sock.connect(sa)\n", "ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it\n", "\nDuring handling of the above exception, another exception occurred:\n\n", "Traceback (most recent call last):\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connectionpool.py\", line 703, in urlopen\n    httplib_response = self._make_request(\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connectionpool.py\", line 398, in _make_request\n    conn.request(method, url, **httplib_request_kw)\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connection.py\", line 244, in request\n    super(HTTPConnection, self).request(method, url, body=body, headers=headers)\n", "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\http\\client.py\", line 1283, in request\n    self._send_request(method, url, body, headers, encode_chunked)\n", "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\http\\client.py\", line 1329, in _send_request\n    self.endheaders(body, encode_chunked=encode_chunked)\n", "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\http\\client.py\", line 1278, in endheaders\n    self._send_output(message_body, encode_chunked=encode_chunked)\n", "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\http\\client.py\", line 1038, in _send_output\n    self.send(msg)\n", "  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\\lib\\http\\client.py\", line 976, in send\n    self.connect()\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connection.py\", line 205, in connect\n    conn = self._new_conn()\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connection.py\", line 186, in _new_conn\n    raise NewConnectionError(\n", "urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001E7C8B639A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\n", "\nDuring handling of the above exception, another exception occurred:\n\n", "Traceback (most recent call last):\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 87, in scraping_requirements\n    is_all_locations_parsed, next_location_index = NHSPPortalScraping.scraping_requirements_for_location(location_index, collective_shift_requirements_file, driver_path)     #on local\n", "  File \"D:\\EPI_Saniya\\Id-Medical_old\\Services\\nhsp_scraping\\Unfilled_28_days_scraping\\main_28_days_scraping.py\", line 578, in scraping_requirements_for_location\n    driver.get_screenshot_as_file(datetime.now().strftime(os.path.join(Constants.EXECUTION_SCREENSHOTS_FOLDER, '28_days_after_error_occured_%d_%m_%Y_%H_%M_%S.png')))   #on docker\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 802, in get_screenshot_as_file\n    png = self.get_screenshot_as_png()\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 836, in get_screenshot_as_png\n    return b64decode(self.get_screenshot_as_base64().encode(\"ascii\"))\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 847, in get_screenshot_as_base64\n    return self.execute(Command.SCREENSHOT)[\"value\"]\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 344, in execute\n    response = self.command_executor.execute(driver_command, params)\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py\", line 290, in execute\n    return self._request(command_info[0], url, body=data)\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py\", line 311, in _request\n    response = self._conn.request(method, url, body=body, headers=headers)\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\request.py\", line 74, in request\n    return self.request_encode_url(\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\request.py\", line 96, in request_encode_url\n    return self.urlopen(method, url, **extra_kw)\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\poolmanager.py\", line 376, in urlopen\n    response = conn.urlopen(method, u.request_uri, **kw)\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connectionpool.py\", line 815, in urlopen\n    return self.urlopen(\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connectionpool.py\", line 815, in urlopen\n    return self.urlopen(\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connectionpool.py\", line 815, in urlopen\n    return self.urlopen(\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\connectionpool.py\", line 787, in urlopen\n    retries = retries.increment(\n", "  File \"C:\\Users\\saniya.pathan\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\site-packages\\urllib3\\util\\retry.py\", line 592, in increment\n    raise MaxRetryError(_pool, url, error or ResponseError(cause))\n", "urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=49154): Max retries exceeded with url: /session/1435bc70-b611-416c-a2e9-859d417fd8f9/screenshot (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E7C8B639A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))\n"]}
